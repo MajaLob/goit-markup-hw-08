@@ -1,0 +1,29 @@
+.footer__container {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer {
+  background-color: var(--background-footer-header-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container {
+  // display:flex;
+  gap: 70px;
+  align-items: baseline;
+}

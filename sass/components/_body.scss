@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--brand-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+:root {
+  --brand-color: #212121;
+  --selection-color: #2196f3;
+  --background-color: #ffffff;
+  --navigation-contacts-color: #757575;
+  --button-font-color: #ffffff;
+  --background-footer-header-color: #2f303a;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,69 @@
+@media screen and (min: 480px) {
+  .menu__link {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media screen and (min: 768px) {
+  .menu__link {
+    display: none;
+  }
+}
+@media screen and (min: 1200px) {
+  .menu__link {
+    display: none;
+  }
+}
+.menu {
+  display: flex;
+  gap: 50px;
+}
+.menu__items {
+  color: var(--navigation-contacts-color);
+
+  &:hover::after,
+  &:focus {
+    fill: var(--background-color);
+    fill: var(--selection-color);
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--brand-color);
+  font-weight: 500;
+  font-size: 14px;
+  // display: flex;
+  // align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--selection-color);
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.menu__link--block {
+  padding: 32px 0;
+}
+.menu__button {
+  position: relative;
+}
+.menu__button--active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--selection-color);
+  bottom: -32px;
+  left: 0px;
+}

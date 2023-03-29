@@ -1,0 +1,15 @@
+.navigation {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.navigation__container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  justify-content: space-between;
+}

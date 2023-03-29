@@ -1,0 +1,106 @@
+.team {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.team {
+  // display: flex;
+  gap: 30px;
+}
+.team__items {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-color);
+  // height: 428px;
+  // margin-bottom: 30px;
+}
+
+.team__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.team__position {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 16px;
+}
+.team__icon {
+  display: flex;
+  justify-content: center;
+  fill: #afb1b8;
+  gap: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__icon-circle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:active {
+    background-color: var(--selection-color);
+    fill: #ffffff;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__icon-list {
+    margin-bottom: 24px;
+  }
+}
+.team__icon-list:hover,
+.team__icon-list:focus {
+  fill: var(--selection-color);
+  fill: var(--background-color);
+}
+
+.team__items {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 622px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 536px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 428px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team__items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

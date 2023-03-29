@@ -1,0 +1,39 @@
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: var(--button-font-color);
+  font-style: normal;
+  flex-direction: row;
+  padding-bottom: 9px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-decoration: none;
+  display: flex;
+  padding-bottom: 9px;
+}
+
+.address,
+.address__contacts {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+}
